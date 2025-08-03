@@ -10,7 +10,8 @@ import {
 const router = express.Router();
 
 router.get('/', getNotes);
-router.get('/:id', searchNote), router.post('/', createNote);
+router.get('/:id', searchNote);
+router.post('/', createNote);
 router.put('/:id', updateNote);
 router.delete('/:id', deleteNote);
 
